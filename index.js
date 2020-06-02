@@ -1,10 +1,10 @@
 
 const express = require('express')
-const routes=require('./routes')
+const routes=require('./src/routes')
 const cors=require('cors')
 const app=express()
 
-app.use(express.static(__dirname+'/build/'))
+app.use(express.static(__dirname+'/src/build/'))
 app.use(cors())
 app.use(express.json())
 app.use(routes)
